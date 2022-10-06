@@ -15,7 +15,11 @@ Build docker image and drop into a container:
 
 ### Build Instructions
 
-@TODO
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
 
 ### Launch
 
