@@ -5,7 +5,7 @@ FROM nvidia/cuda:11.4.0-base-ubuntu20.04 as base
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get upgrade -y \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      lsb-release wget gnupg vim gdb byobu \
+      lsb-release wget gnupg vim gdb byobu build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 # install Ignition Gazebo
